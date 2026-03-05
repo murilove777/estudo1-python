@@ -1,0 +1,8 @@
+nota = float (input(" digite a nota:"))
+frequencia = int(input("digite a frequencia:"))
+if nota >= 6 and frequencia >= 75:
+    print ("parabens! voce passou")
+elif nota < 6 and frequencia >= 75: 
+    print ("voce passou por frequencia")
+else:
+    print ("aluno reprovado >:")
