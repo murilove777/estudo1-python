@@ -1,0 +1,36 @@
+jogadores = {
+    "Murilo": 47,
+    "Otavio": 124,
+    "igor": 228,
+    "Estevao": 317,
+    "Sophia": 476,
+}
+
+bronze = 0 
+prata = 100
+platina = 200
+ouro = 300
+diamante = 400
+mestre = 500
+
+for nomes, pontos in jogadores.items():
+    if 0 <= pontos <=  bronze:
+        print("o jogador ", nomes, "esta no ranking bronze!")
+        print("faltam ", prata - pontos, "pontos para passar para o proximo ranking")
+    elif bronze <= pontos <= prata:
+        print("o jogador ", nomes, "esta no ranking prata!")
+        print("faltam ", platina - pontos, "pontos para passar para o proximo ranking")
+    elif prata <= pontos <= platina:
+        print("o jogador ", nomes, "esta no ranking platina!")
+        print("faltam ", ouro - pontos, "pontos para passar para o proximo ranking")
+    elif platina <= pontos <= ouro:
+        print("o jogador ", nomes, "esta no ranking ouro!")
+        print("faltam ", diamante - pontos, "pontos para passar para o proximo ranking")
+    elif ouro <= pontos <= diamante:
+        print("o jogador ", nomes, "esta no ranking diamente!")
+        print("faltam ", mestre - pontos, "pontos para passar para o proximo ranking")
+    elif diamante <= pontos <= mestre:
+        print("o jogador ", nomes, "esta no ranking mestre!")
+        print("faltam ", mestre - pontos, "pontos para passar para o proximo ranking")
+    elif pontos > mestre:
+        print("o jogador ", nomes, "esta no ranking mestre!")
