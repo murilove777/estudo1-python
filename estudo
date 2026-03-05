@@ -4,6 +4,7 @@ jogadores = {
     "igor": 228,
     "Estevao": 317,
     "Sophia": 476,
+    "lucio": 333
 }
 
 bronze = 0 
