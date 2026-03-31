@@ -1,0 +1,14 @@
+def validar_senha(senha):
+    tamanho_minimo = len(senha) >= 8
+    tem_numero = any(char.isdigit() for char in senha)
+    tem_maiuscula = any(char.isupper() for char in senha)
+    
+    if tamanho_minimo and tem_numero and tem_maiuscula:
+        return "Senha forte! acesso garantido"
+    else:
+        return "senha_fraca..."
+
+print("---Sistema de segurança da startup---")
+sua_senha = input("Digite sua senha: ")
+resultado = validar_senha(sua_senha)
+print(resultado))
