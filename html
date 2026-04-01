@@ -1,0 +1,130 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>meu site</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    <h1>meu site</h1>
+<nav>
+<a href="#home"a>
+<a href="#sobre"></a>
+<a href="#projeto"></a>
+<a href="#contato"></a>
+</nav>
+<header>
+<section id="home" class="banner">
+    <h2>bem vindo!</h2>
+    <p>site com html</p>
+    <button onclick="mostrarmensagem()">clique aqui</button>
+</section>
+
+<section id="projeto">
+    <h2>projetos</h2>
+    <div class="cards">
+    <div class="card">projeto 1</div>
+    <div class="card">projeto 2</div>
+    <div class="card">projeto 3</div>
+</div>
+</section>
+
+<section id="contato">
+<h2>contato</h2>
+<form>
+    <input type="text" placeholder="nome">
+    <input type="email"placeholder= "email">
+    <textarea placeholder="mensagem"></textarea>
+    <button type="submit">enviar</button>  
+</form>
+</section>
+<footer><p>© 2026 - Meu Site</p></footer>
+<script src="script.js"></script>
+</body>
+</html>
+
+
+
+
+
+body {
+    margin: 0;
+    font-family: Arial, sans-serif;
+  }
+  
+
+  header {
+    background: #111;
+    color: white;
+    padding: 15px;
+  }
+  
+
+  .banner {
+    background: linear-gradient(to right, #4facfe, #00f2fe);
+    color: white;
+    text-align: center;
+    padding: 80px 20px;
+  }
+  
+  
+  .container {
+    max-width: 1000px;
+    margin: auto;
+    padding: 40px 20px;
+  }
+  
+
+  .cards {
+    display: flex;
+    gap: 20px;
+    margin-top: 20px;
+  }
+  
+  .card {
+    background: #1c1c1c;
+    padding: 30px;
+    flex: 1;
+    border-radius: 10px;
+    text-align: center;
+    transition: 0.3s;
+  }
+  
+  .card:hover {
+    transform: scale(1.05);
+    background: #333;
+  }
+  
+
+  form {
+    display: flex;
+    flex-direction: column;
+    gap: 10px;
+    max-width: 400px;
+  }
+  
+  input, textarea {
+    padding: 10px;
+  }
+  
+
+  button {
+    padding: 10px;
+    background: #111;
+    color: white;
+    border: none;
+    cursor: pointer;
+  }
+  
+  footer {
+    background: #111;
+    color: white;
+    text-align: center;
+    padding: 10px;
+  }
+
+
+
+
+
